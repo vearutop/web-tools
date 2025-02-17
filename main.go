@@ -1,4 +1,4 @@
-// Package main provides brick-starter-kit web service.
+// Package main provides web-tools web service.
 package main
 
 import (
@@ -6,9 +6,9 @@ import (
 	"net/http"
 
 	"github.com/bool64/brick"
-	"github.com/bool64/brick-starter-kit/internal/infra"
-	"github.com/bool64/brick-starter-kit/internal/infra/nethttp"
-	"github.com/bool64/brick-starter-kit/internal/infra/service"
+	"github.com/bool64/web-tools/internal/infra"
+	"github.com/bool64/web-tools/internal/infra/nethttp"
+	"github.com/bool64/web-tools/internal/infra/service"
 )
 
 func main() {

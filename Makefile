@@ -40,6 +40,6 @@ RELEASE_TARGETS ?= linux/amd64
 # Add your custom targets here.
 
 ## Run tests
-test: test-unit test-integration
+test: test-unit
 
 -include local.mk

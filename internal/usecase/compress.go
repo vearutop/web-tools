@@ -9,7 +9,8 @@ import (
 	"github.com/swaggest/usecase"
 )
 
-func Compress(deps ogDeps) usecase.Interactor {
+// Compress converts a text to base64 of brotli.
+func Compress(_ interface{}) usecase.Interactor {
 	type req struct {
 		Text string `contentType:"text/plain"`
 	}

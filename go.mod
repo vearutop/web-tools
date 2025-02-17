@@ -9,7 +9,7 @@ require (
 	github.com/bool64/brick v0.3.2
 	github.com/bool64/cache v0.4.8
 	github.com/bool64/ctxd v1.2.1
-	github.com/bool64/dev v0.2.38
+	github.com/bool64/dev v0.2.39-0.20250217133810-daf978590ed7
 	github.com/bool64/logz v1.3.2
 	github.com/bool64/sqluct v0.2.4
 	github.com/bool64/stats v0.2.2

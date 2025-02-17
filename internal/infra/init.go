@@ -6,9 +6,9 @@ import (
 	"github.com/bool64/brick"
 	"github.com/bool64/cache"
 	"github.com/bool64/logz"
-	"github.com/bool64/web-tools/internal/infra/schema"
-	"github.com/bool64/web-tools/internal/infra/service"
 	"github.com/swaggest/rest/response/gzip"
+	"github.com/vearutop/web-tools/internal/infra/schema"
+	"github.com/vearutop/web-tools/internal/infra/service"
 )
 
 // NewServiceLocator creates application service locator.

@@ -1,4 +1,4 @@
-module github.com/bool64/web-tools
+module github.com/vearutop/web-tools
 
 go 1.22.7
 

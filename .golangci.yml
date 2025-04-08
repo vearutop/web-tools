@@ -18,6 +18,8 @@ linters-settings:
 linters:
   enable-all: true
   disable:
+    - funlen
+    - cyclop
     - intrange
     - copyloopvar
     - lll

@@ -1,8 +1,8 @@
 module github.com/vearutop/web-tools
 
-go 1.22.7
+go 1.23.0
 
-toolchain go1.23.4
+toolchain go1.24.0
 
 require (
 	github.com/andybalholm/brotli v1.1.1
@@ -11,11 +11,9 @@ require (
 	github.com/bool64/ctxd v1.2.1
 	github.com/bool64/dev v0.2.39
 	github.com/bool64/logz v1.3.2
-	github.com/bool64/sqluct v0.2.4
-	github.com/bool64/stats v0.2.2
-	github.com/swaggest/rest v0.2.72
+	github.com/swaggest/rest v0.2.73
 	github.com/swaggest/usecase v1.3.1
-	golang.org/x/net v0.35.0
+	golang.org/x/net v0.39.0
 )
 
 require (
@@ -25,6 +23,8 @@ require (
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bool64/prom-stats v0.1.3 // indirect
 	github.com/bool64/shared v0.1.5 // indirect
+	github.com/bool64/sqluct v0.2.4 // indirect
+	github.com/bool64/stats v0.2.2 // indirect
 	github.com/bool64/zapctxd v1.2.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
@@ -54,8 +54,8 @@ require (
 	github.com/swaggest/assertjson v1.9.0 // indirect
 	github.com/swaggest/form/v5 v5.1.1 // indirect
 	github.com/swaggest/jsonschema-go v0.3.73 // indirect
-	github.com/swaggest/openapi-go v0.2.55 // indirect
-	github.com/swaggest/refl v1.3.0 // indirect
+	github.com/swaggest/openapi-go v0.2.57 // indirect
+	github.com/swaggest/refl v1.3.1 // indirect
 	github.com/swaggest/swgui v1.8.2 // indirect
 	github.com/vearutop/dynhist-go v1.2.3 // indirect
 	github.com/vearutop/lograte v1.2.0 // indirect
@@ -64,8 +64,8 @@ require (
 	go.opencensus.io v0.24.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
-	golang.org/x/sys v0.30.0 // indirect
-	golang.org/x/text v0.22.0 // indirect
+	golang.org/x/sys v0.32.0 // indirect
+	golang.org/x/text v0.24.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250212204824-5a70512c5d8b // indirect
 	google.golang.org/grpc v1.70.0 // indirect
 	google.golang.org/protobuf v1.36.5 // indirect

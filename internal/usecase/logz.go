@@ -32,5 +32,8 @@ func Logz(deps interface {
 		return nil
 	})
 
+	u.SetTags("Misc")
+	u.SetDescription("Logs observer")
+
 	return u
 }

@@ -41,7 +41,7 @@ func Compress(_ interface{}) usecase.Interactor {
 		return nil
 	})
 
-	u.SetTags("Mock")
+	u.SetTags("Misc")
 	u.SetDescription("Compresses text to base64(brotli) to use as /mock response body.")
 
 	return u

@@ -14,11 +14,15 @@ import (
 func NewRouter(deps *service.Locator) http.Handler {
 	r := brick.NewBaseWebService(deps.BaseLocator)
 
+	r.Post("/create-mock", usecase.CreateMock(deps))
+
 	r.Handle("/og.html", nethttp.NewHandler(usecase.OG(deps)))
 
 	r.Handle("/mock", nethttp.NewHandler(usecase.Mock(deps)))
 	r.Get("/logs/{key}", usecase.Logz(deps))
 	r.Post("/compress", usecase.Compress(deps))
+
+	r.Get("/.well-known/assetlinks.json", usecase.AssetLinksJSON(deps))
 
 	return r
 }

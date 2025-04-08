@@ -102,7 +102,7 @@ func Mock(deps interface {
 		return nil
 	})
 
-	u.SetTags("Mock")
+	u.SetTags("Serve Mock")
 	u.SetDescription("Mock serves pre-defined response based on query parameters.")
 
 	return u

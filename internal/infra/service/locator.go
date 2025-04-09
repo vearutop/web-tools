@@ -7,6 +7,7 @@ import (
 	"github.com/bool64/brick"
 	"github.com/bool64/cache"
 	"github.com/bool64/logz"
+	"github.com/vearutop/web-tools/internal/usecase"
 )
 
 // Locator defines application resources.
@@ -14,6 +15,7 @@ type Locator struct {
 	*brick.BaseLocator
 
 	AccessLogs *cache.FailoverOf[*logz.Observer]
+	ShortLinks *cache.ShardedMapOf[usecase.MockData]
 }
 
 // AccessLogzObserver returns an instance of log collector.
@@ -26,4 +28,9 @@ func (l *Locator) AccessLogzObserver(ctx context.Context, key string) (*logz.Obs
 
 		return &o, nil
 	})
+}
+
+// ShortLinksStore returns an short links cache.
+func (l *Locator) ShortLinksStore() *cache.ShardedMapOf[usecase.MockData] {
+	return l.ShortLinks
 }

@@ -18,6 +18,7 @@ linters-settings:
 linters:
   enable-all: true
   disable:
+    - gocognit
     - funlen
     - cyclop
     - intrange

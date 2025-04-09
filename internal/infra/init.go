@@ -9,6 +9,7 @@ import (
 	"github.com/swaggest/rest/response/gzip"
 	"github.com/vearutop/web-tools/internal/infra/schema"
 	"github.com/vearutop/web-tools/internal/infra/service"
+	"github.com/vearutop/web-tools/internal/usecase"
 )
 
 // NewServiceLocator creates application service locator.
@@ -38,6 +39,11 @@ func NewServiceLocator(cfg service.Config) (loc *service.Locator, err error) {
 		cfg.BackendConfig.CountSoftLimit = 1000
 		cfg.BackendConfig.EvictionStrategy = cache.EvictLeastRecentlyUsed
 		cfg.BackendConfig.TimeToLive = cache.UnlimitedTTL
+	})
+
+	l.ShortLinks = cache.NewShardedMapOf[usecase.MockData](func(cfg *cache.Config) {
+		cfg.CountSoftLimit = 1000
+		cfg.EvictionStrategy = cache.EvictLeastRecentlyUsed
 	})
 
 	return l, nil

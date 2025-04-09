@@ -24,5 +24,7 @@ func NewRouter(deps *service.Locator) http.Handler {
 
 	r.Get("/.well-known/assetlinks.json", usecase.AssetLinksJSON(deps))
 
+	r.OnNotFound(usecase.ShortMock(deps))
+
 	return r
 }
